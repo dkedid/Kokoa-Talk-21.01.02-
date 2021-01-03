@@ -6,9 +6,13 @@
 /* Components */
 @import "components/status_bar.css";
 @import "components/nav_bar.css";
+@import "components/screen-header.css";
+
 /* screen */
 @import "screen/login.css";
+@import "screen//friends.css";
 
 body {
     font-family: 'Open Sans', sans-serif;
+    color: #2e363e;
 }

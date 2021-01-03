@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Kokoa Talk</title>
+    <script language="javascript">
+        function time(){
+         var time= new Date();
+             document.getElementById("now").innerHTML=time.getHours()+":"+time.getMinutes();
+            setInterval("time()",1000);
+         }
+             </script>
+
 </head>
-<body>
+<body onload="time()">
+
     <div class="status-bar">
         <div class="status-bar__column">
             <span>KT</span>
             <!-- Wifi Icon -->
             <i class="fas fa-wifi"></i></div>
         <div class="status-bar__column">
-            <span>12:46</span>
+            <span><span id="now"></span></span>
         </div>
         <div class="status-bar__column">
             <span>100%</span>
@@ -37,8 +46,10 @@
             <input type="password" placeholder="Password"/>
             <input type="submit" value="Log In"/>
             <input type="submit" value="Sign Up"/>
- 
-            <a href="#">Find Kokoa Account or Password</a>
+            
+            <div>
+                <a href="#">Find Kokoa Account or Password</a>
+            </div>
         </form>
     </header>
 

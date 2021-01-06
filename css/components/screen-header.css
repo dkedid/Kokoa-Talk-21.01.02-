@@ -13,8 +13,11 @@
 
 .screen-header__icons {
     display: flex;
-    width: 120px;
     justify-content: space-between;
     padding-right: 5px;
     align-items: center;
+}
+
+.screen-header__icons span {
+    margin-left: 25px;
 }

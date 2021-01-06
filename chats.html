@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats - Kokoa Clone</title>
+    <script language="javascript">
+        function time(){
+         var time= new Date();
+             document.getElementById("now").innerHTML=time.getHours()+":"+time.getMinutes();
+            setInterval("time()",1000);
+         }
+             </script>
+
+</head>
+<body onload="time()">
+
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>KT</span>
+            <!-- Wifi Icon -->
+            <i class="fas fa-wifi"></i></div>
+        <div class="status-bar__column">
+            <span><span id="now"></span></span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <!-- Battry Icon -->
+            <i class="fas fa-battery-full fa-lg"></i>
+            <!-- Lightning Icon -->
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification">1</span>
+                    <i class="fas fa-comment fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__setting"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Chats</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="far fa-comment-dots fa-lg"></i></span>
+            <span><i class="fas fa-music fa-lg"></i></span>
+            <span><i class="fas fa-cog fa-lg"></i></span>
+        </div>
+    </header>
+
+
+    <main class="friends-screen">
+        <div class="user-component__chat">
+            <div class="user-component__column">
+                <img src="https://images.mypetlife.co.kr/content/uploads/2019/09/06144600/zach-reiner-YVpr0OdSUe0-unsplash-1024x683.jpg" class="user-component__avatar__sm">
+                <div class="user-component__text">
+                    <div class="user-component__time">
+                        <h4 class="user-component__title">
+                            주인님
+                        </h4>
+                        <span class="user-component__time-now">
+                            13:34
+                        </span>
+                    </div>
+                    <h6 class="user-component__subtitle">츄르 어디다 뒀냐?</h6>
+                </div>
+            </div>
+            <div class="user-component__column"></div>
+        </div>  
+
+        <div class="user-component__chat">
+            <div class="user-component__column">
+                <img src="https://i.pinimg.com/564x/59/54/b4/5954b408c66525ad932faa693a647e3f.jpg" class="user-component__avatar__sm">
+                <div class="user-component__text">
+                    <div class="user-component__time">
+                        <h4 class="user-component__title">
+                            mush
+                        </h4>
+                        <span class="user-component__time-now">
+                            19:40
+                        </span>
+                    </div>
+                    <h6 class="user-component__subtitle">Hello sir. I'm glad to meet U</h6>
+                </div>
+            </div>
+            <div class="user-component__column"></div>
+        </div>  
+
+        <div class="user-component__chat">
+            <div class="user-component__column">
+                <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/931/957/b02.jpg" class="user-component__avatar__sm">
+                <div class="user-component__text">
+                    <div class="user-component__time">
+                        <h4 class="user-component__title">
+                            POP cat
+                        </h4>
+                        <span class="user-component__time-now">
+                            22:15
+                        </span>
+                    </div>
+                    <h6 class="user-component__subtitle">POP POP POP POP POP POP POP POP</h6>
+                </div>
+            </div>
+            <div class="user-component__column"></div>
+        </div>  
+
+        
+        
+
+    </main>
+    <script
+    src="https://kit.fontawesome.com/6478f529f2.js"
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>

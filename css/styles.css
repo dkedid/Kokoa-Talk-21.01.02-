@@ -13,6 +13,7 @@
 /* screen */
 @import "screen/login.css";
 @import "screen/friends.css";
+@import "screen/find.css";
 
 body {
     font-family: 'Open Sans', sans-serif;

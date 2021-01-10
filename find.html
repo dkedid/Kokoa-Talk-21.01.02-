@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find - Kokoa Clone</title>
+    <script language="javascript">
+        function time(){
+         var time= new Date();
+             document.getElementById("now").innerHTML=time.getHours()+":"+time.getMinutes();
+            setInterval("time()",1000);
+         }
+             </script>
+
+</head>
+<body onload="time()">
+
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>KT</span>
+            <!-- Wifi Icon -->
+            <i class="fas fa-wifi"></i></div>
+        <div class="status-bar__column">
+            <span><span id="now"></span></span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <!-- Battry Icon -->
+            <i class="fas fa-battery-full fa-lg"></i>
+            <!-- Lightning Icon -->
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification">1</span>
+                    <i class="far fa-comment fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__setting"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Find</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="fas fa-cog fa-lg"></i></span>
+            <span class="setting_al"></span>
+        </div>
+    </header>
+
+    <div class="find-header-box">
+        <div class="find-header">
+            <div class="find-header__column">
+                <i class="fas fa-qrcode fa-2x"></i>
+                <div>QR Code</div>
+            </div>
+
+            <div class="find-header__column">
+                <i class="far fa-address-book fa-2x"></i>
+                <div>Add by Contcts</div>
+            </div>
+
+            <div class="find-header__column">
+                <i class="far fa-address-book fa-2x"></i>
+                <div>Add by ID</div>
+            </div>
+
+            <div class="find-header__column">
+                <i class="far fa-envelope fa-2x"></i>
+                <div>Invite</div>
+            </div>
+        </div>
+
+        <div class="recommended-box">
+            <div class="recommended-box__padding">
+                <span class="recommended-box__title">Recommended Friends</span>
+                <div class="recommended-box__contents">
+                    <span>You have no recommended friends.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="open-chat-box">
+        <div class="open-chat__title">
+            <div class="open-chat__text">Open Chat</div>
+            <div class="open-chat__home">
+                <span class="open-chat__home__text">Go to Openchat Home</span>
+                <i class="fas fa-chevron-right fa-xs"></i>
+            </div>
+        </div>
+
+        <div class="open-chat__column">
+            <div class="open-chat__column-text">
+                <div class="open-chat__column-title">#ChatBot</div>
+                <div class="open-chat__column-subtitle">#L:uda #Chat #AI </div>
+                <div class="open-chat__column-inf">
+                    <img class="inf-img" src="https://w.namu.la/s/95d769b628834c9382c8b226a3d027fc6e819007017f52a2a75c0cd5eef643706640d4470d1c2971ebb2930bf02cb746d2dab2e7633eb93980cf57c8048dcbca4af592416d32f65dea5aea36e768e001b17436b0839fc052f3e13405ccf6d8d7a80a5d5e97e425ce95aecdd0f3d17517">
+                    <span>802 members</span>
+                    <i class="fas fa-grip-lines-vertical"></i>
+                    <span>Active</span>
+                </div>
+            </div>
+
+            <div class="open-chat__column-img">
+                <a href="https://luda.ai/" target="_blank">
+                    <img class="column-img" src="https://w.namu.la/s/95d769b628834c9382c8b226a3d027fc6e819007017f52a2a75c0cd5eef643706640d4470d1c2971ebb2930bf02cb746d2dab2e7633eb93980cf57c8048dcbca4af592416d32f65dea5aea36e768e001b17436b0839fc052f3e13405ccf6d8d7a80a5d5e97e425ce95aecdd0f3d17517">
+                </a>
+                <div class="column-like">
+                    <i class="fas fa-heart"></i>
+                    <span>326</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </main>
+    <script
+    src="https://kit.fontawesome.com/6478f529f2.js"
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>

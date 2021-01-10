@@ -143,12 +143,25 @@
     margin-right: 5px;
 }
 
+.open-chat__column-inf img {
+    border-radius: 3px;
+}
+
 .open-chat__column-inf :nth-child(2) {
     margin-right: 5px;
 }
 
 .open-chat__column-inf :nth-child(3) {
     margin-right: 5px;
+}
+
+.open-chat__column-inf :last-child {
+    color:violet;
+    font-weight: 300;
+}
+
+.find-header__column i {
+    font-size: 100;
 }
 
 .inf-img {

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More - Kokoa Clone</title>
+    <script language="javascript">
+        function time(){
+         var time= new Date();
+             document.getElementById("now").innerHTML=time.getHours()+":"+time.getMinutes();
+            setInterval("time()",1000);
+         }
+             </script>
+
+</head>
+<body onload="time()">
+
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>KT</span>
+            <!-- Wifi Icon -->
+            <i class="fas fa-wifi"></i></div>
+        <div class="status-bar__column">
+            <span><span id="now"></span></span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <!-- Battry Icon -->
+            <i class="fas fa-battery-full fa-lg"></i>
+            <!-- Lightning Icon -->
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification">1</span>
+                    <i class="far fa-comment fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__setting"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    
+    <header class="screen-header">
+        <h1 class="screen-header__title">More</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="fas fa-cog fa-lg"></i></span>
+            <span class="setting_al"></span>
+        </div>
+    </header>
+
+
+    <main class="main-screen">
+        <div class="user-component">
+            <div class="user-component__column">
+                <img src="https://w.namu.la/s/95d769b628834c9382c8b226a3d027fc6e819007017f52a2a75c0cd5eef643706640d4470d1c2971ebb2930bf02cb746d2dab2e7633eb93980cf57c8048dcbca4af592416d32f65dea5aea36e768e001b17436b0839fc052f3e13405ccf6d8d7a80a5d5e97e425ce95aecdd0f3d17517" class="user-component__avatar__xl">
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Luda Lee</h4>
+                    <div class="phone-number">
+                        <h6 class="user-component__subtitle">+1 787-493-4219</h6>
+                        <a><i class="fas fa-exclamation-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="user-component__column-img">
+                <a href="https://scatterlab.co.kr/contact" target="_blank"><i class="fas fa-envelope-open-text fa-2x"></i></a>
+            </div>
+        </div>
+
+
+        <div class="more__content-box">
+            <div class="more__content-box__column">
+                <div class="more__content-box__content">
+                    <i class="far fa-calendar-check fa-3x"></i>
+                    <span>Calendar</span>
+                </div>
+                <div class="more__content-box__content">
+                    <i class="fas fa-archive fa-3x"></i>
+                    <span>Talk Drive</span>
+                    <div class="themes-alert"></div>
+                </div>
+                <div class="more__content-box__content">
+                    <i class="far fa-grin-squint fa-3x"></i>
+                    <span>Emoticons</span>
+                </div>
+                <div class="more__content-box__content">
+                    <i class="fas fa-brush fa-3x"></i>
+                    <span>Themes</span>
+                </div>
+            </div>
+            <div class="more__content-box__column">
+                <div class="more__content-box__content">
+                    <i class="fas fa-project-diagram fa-3x"></i>
+                    <span>Account</span>
+                </div>
+                <div class="more__content-box__content">
+                    <i class="far fa-comments fa-3x"></i>
+                    <span>Openchat</span>
+                </div>
+
+
+                <div class="more__content-box__content">
+                    <i class="far fa-comments fa-3x"></i>
+                    <span></span>
+                </div>
+                <div class="more__content-box__content">
+                    <i class="far fa-comments fa-3x"></i>
+                    <span></span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="suggestions-box">
+            <div class="suggestions-box__title">
+                Suggestions
+            </div>
+            <div class="suggestions-box__content">
+                <div class="suggestions-box__content__contents">
+                    <img src="https://scontent-ssn1-1.xx.fbcdn.net/v/t1.0-9/10574212_338638662951890_32561236074141582_n.png?_nc_cat=109&ccb=2&_nc_sid=9267fe&_nc_ohc=lx21S90G9uAAX-ElXZg&_nc_ht=scontent-ssn1-1.xx&oh=d4448e7c8012478b842bd73b1a52858f&oe=601F686C">
+                    <span>Kakao Story</span>
+                </div>
+                <div class="suggestions-box__content__contents">
+                    <img src="https://i.pinimg.com/564x/c1/76/f5/c176f5cff0cd14f76b6a79fb8026167c.jpg">
+                    <span>Kakao friends</span>
+                </div>
+                <div class="suggestions-box__content__contents">
+                    <img src="https://lh3.googleusercontent.com/HDajQA-qewATHReMVw8caNIifQ7pmLK0Jud2xTZ60B8QOBWBo3ifIQBCIqFTjS2YiPc=w100">
+                    <span>Friends Gem</span>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <script
+    src="https://kit.fontawesome.com/6478f529f2.js"
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>

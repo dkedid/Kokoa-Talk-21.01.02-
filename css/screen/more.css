@@ -1,0 +1,121 @@
+.phone-number {
+    display: flex;
+}
+
+.phone-number i {
+    color: tomato;
+    margin-left: 5px;
+}
+
+.user-component__column-img i {
+    color:black;
+}
+
+.more__content-box {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: rgba(0,0,0,0.6);
+    padding-bottom: 20px;
+    border-bottom: var(--main-border);
+}
+.more__content-box__column {
+    display: flex;
+    margin: 25px 10px;
+    justify-content: space-between;
+}
+
+.more__content-box__column:nth-child(2) {
+    display: flex;
+    margin: 25px 10px;
+    justify-content: space-between;
+}
+
+
+
+.more__content-box__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.more__content-box__column:nth-child(2) :nth-child(3){
+    color: white;
+}
+
+.more__content-box__column:nth-child(2) :nth-child(4){
+    color: white;
+}
+
+
+.more__content-box__content span {
+    margin-top: 20px;
+}
+
+.more__content-box__content:nth-child(2) {
+    position: relative;
+}
+
+.themes-alert {
+    position: absolute;
+    background-color: tomato;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    right: 0px;
+    top: -10px;
+}
+
+/* 컨텐츠 박스*/
+
+.suggestions-box {
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.suggestions-box__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 25px 0px;
+}
+
+.suggestions-box__content{
+    display: flex;
+
+}
+
+.suggestions-box__content__contents {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.suggestions-box__content__contents i {
+    color: teal;
+}
+
+
+.suggestions-box__content__contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.suggestions-box__content__contents span {
+    margin-top: 10px;
+}
+
+
+.suggestions-box__content__contents img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.suggestions-box__content__contents span {
+    font-weight: 600;
+    font-size: 15px;
+    color: rgba(0,0,0,0.6)
+}

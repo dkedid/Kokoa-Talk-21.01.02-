@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Kokoa Clone</title>
+    <script language="javascript">
+        function time(){
+         var time= new Date();
+             document.getElementById("now").innerHTML=time.getHours()+":"+time.getMinutes();
+            setInterval("time()",1000);
+         }
+             </script>
+
+</head>
+<body onload="time()">
+
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>KT</span>
+            <!-- Wifi Icon -->
+            <i class="fas fa-wifi"></i></div>
+        <div class="status-bar__column">
+            <span><span id="now"></span></span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <!-- Battry Icon -->
+            <i class="fas fa-battery-full fa-lg"></i>
+            <!-- Lightning Icon -->
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification">1</span>
+                    <i class="far fa-comment fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__setting"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="friends.html"><i class="fas fa-chevron-left fa-2x"></i></a>
+        </div>
+        <div class="alt-header__column">
+            Settings
+        </div>
+        <div class="alt-header__column">
+            <i class="fas fa-search fa-2x"></i>
+        </div>
+    </header>
+
+
+    <main class="main-screen">
+
+        <div class="setting-latest-box">
+            <div class="setting-latest-box__column">
+                <div class="setting-latest-box__column__icon"><i class="fas fa-volume-off fa-2x"></i></div>
+                <span>Notices</span>
+            </div>
+            <div class="setting-latest-box__column">
+                <div class="setting-latest-box__column__icon"><i class="fas fa-flask fa-2x"></i></div>
+                <span>Kokoa lab</span>
+            </div>
+            <div class="setting-latest-box__column">
+                <div class="setting-latest-box__column__box">
+                    <div class="setting-latest-box__column__icon"><i class="fas fa-info-circle fa-2x"></i></div>
+                    <span>Version</span>
+                </div>
+                <div class="inf_color">Latest Version</div>
+            </div>
+        </div>
+
+        <div class="setting-default-box">
+            <div class="setting-default-box__column">
+                <div class="setting-default-box__column__icon"><i class="fas fa-user-lock fa-2x"></i></div>
+                <span>Privacy</span>
+            </div>
+            <div class="setting-default-box__column">
+                <div class="setting-default-box__column__icon"><i class="far fa-bell fa-2x"></i></div>
+                <span>Notifications</span>
+            </div>
+            <div class="setting-default-box__column">
+                <div class="setting-default-box__column__icon"><i class="fas fa-user-friends fa-2x"></i></div>
+                <span>Friends</span>
+            </div>
+            <div class="setting-default-box__column">
+                <div class="setting-default-box__column__icon"><i class="far fa-comment fa-2x"></i></div>
+                <span>Chats</span>
+            </div>
+            <div class="setting-default-box__column">
+                <div class="setting-default-box__column__icon"><i class="fas fa-mobile-alt fa-2x"></i></div>
+                <span>Display</span>
+                <div class="badge">N</div>
+            </div>
+            <div class="setting-default-box__column">
+                    <div class="setting-default-box__column__box">
+                        <div class="setting-default-box__column__icon"><i class="fas fa-brush fa-2x"></i></div>
+                        <span>Themes</span>
+                        <div class="badge">N</div>
+                    </div>
+                    <div class="inf_color">Default theme</div>
+                </div>
+            </div>
+            <div class="setting-default-box__column">
+                <div class="setting-default-box__column__icon"><i class="fas fa-phone fa-2x"></i></div>
+                <span>Call</span>
+            </div>
+        </div>
+
+
+    </main>
+    <script
+    src="https://kit.fontawesome.com/6478f529f2.js"
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>

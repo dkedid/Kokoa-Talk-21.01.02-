@@ -282,7 +282,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(#dd8cb1,#F2EEE5 ,#C3E2DD);
+    background: linear-gradient(#C3E2DD,#F2EEE5 ,#afafc8);
     width: 47%;
     height: 100%;
     border-radius: 10px;
@@ -458,7 +458,6 @@ input[type=range]::-webkit-slider-thumb {
     padding: 20px;
     margin: 20px 0px;
     color: white;
-    box-shadow: 9px 9px 20px rgba(0,0,0,0.7);
 }
 
 .song-box__playbar__border {

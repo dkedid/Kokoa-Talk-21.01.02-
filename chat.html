@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Kokoa Clone</title>
+    <script language="javascript">
+        function time(){
+         var time= new Date();
+             document.getElementById("now").innerHTML=time.getHours()+":"+time.getMinutes();
+            setInterval("time()",1000);
+         }
+             </script>
+
+</head>
+<body onload="time()" id="chat-screen">
+
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>KT</span>
+            <!-- Wifi Icon -->
+            <i class="fas fa-wifi"></i></div>
+        <div class="status-bar__column">
+            <span><span id="now"></span></span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <!-- Battry Icon -->
+            <i class="fas fa-battery-full fa-lg"></i>
+            <!-- Lightning Icon -->
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    
+    <header class="chat-alt-header">
+        <div class="chat-alt-header__column">
+            <a href="chats.html"><i class="fas fa-chevron-left fa-lg"></i></a>
+        </div>
+        <div class="chat-alt-header__column">
+            Luda Lee
+        </div>
+        <div class="chat-alt-header__column">
+            <i class="fas fa-search fa-lg"></i>
+            <span><i class="fas fa-bars fa-lg"></i></span>
+        </div>
+    </header>
+
+
+    <main class="main-screen" id="chat-main-screen">
+        <div class="main-chat-box">
+            <div class="chat-time-box">
+                <div class="chat-time">Tuesday, June 30, 2021</div>
+            </div>
+
+
+
+
+            <div class="main-chat">
+
+                <div class="main-chat__column-receive">
+                    <img class="main-chat__column-receive__img" src="https://w.namu.la/s/95d769b628834c9382c8b226a3d027fc6e819007017f52a2a75c0cd5eef643706640d4470d1c2971ebb2930bf02cb746d2dab2e7633eb93980cf57c8048dcbca4af592416d32f65dea5aea36e768e0010fee459f7fe9c2364ec1ba29b28ed12649e419baa971169258f1fa00035270f0">
+                    <div class="main-chat__column-receive-text">
+                        <div class="main-chat__column-receive__title">Luda Lee</div>
+                        <div class="main-chat__column-receive__subtitle">
+                            <div class="main-chat__column-receive__subtitle-border">
+                                <div class="main-chat__column-receive__subtitle-text">Suuup!</div>
+                            </div>
+                            <div class="main-chat__column-receive__subtitle-time">23:28</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-chat__column-send">
+                    <div class="main-chat__column-send-text">
+                        <div class="main-chat__column-send__subtitle">
+                            <div class="main-chat__column-send__subtitle-time">00:12</div>
+                            <div class="main-chat__column-send__subtitle-border">
+                            <div class="main-chat__column-send__subtitle-text">Suuup!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <div class="fixed-box">
+        <div class="input-box">
+            <div class="input-box-plus">
+                <a class="input-box-a" href="#">
+                    <i class="far fa-plus-square fa-2x"></i>
+                </a>
+            </div>
+            <form class="input-box-border">
+                <div class="input-box-border-text">
+                    <input type="text" placeholder="Write a massage"/>
+                </div>
+                    
+                <div class="input-box-border-i">
+                    <i class="far fa-smile fa-2x"></i>
+                    <div class="input-box-border-border">
+                        <i class="fas fa-arrow-up fa-lg"></i>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="pad-box">
+            <div class="pad-box__column">
+                <div class="pad-box__btn-al"><span>q</span></div>
+                <div class="pad-box__btn-al"><span>w</span></div>
+                <div class="pad-box__btn-al"><span>e</span></div>
+                <div class="pad-box__btn-al"><span>r</span></div>
+                <div class="pad-box__btn-al"><span>t</span></div>
+                <div class="pad-box__btn-al"><span>y</span></div>
+                <div class="pad-box__btn-al"><span>u</span></div>
+                <div class="pad-box__btn-al"><span>i</span></div>
+                <div class="pad-box__btn-al"><span>o</span></div>
+                <div class="pad-box__btn-al"><span>p</span></div>
+            </div>
+
+            <div class="pad-box__column">
+                <div class="pad-box__btn-al"><span>a</span></div>
+                <div class="pad-box__btn-al"><span>s</span></div>
+                <div class="pad-box__btn-al"><span>d</span></div>
+                <div class="pad-box__btn-al"><span>f</span></div>
+                <div class="pad-box__btn-al"><span>g</span></div>
+                <div class="pad-box__btn-al"><span>h</span></div>
+                <div class="pad-box__btn-al"><span>j</span></div>
+                <div class="pad-box__btn-al"><span>k</span></div>
+                <div class="pad-box__btn-al"><span>l</span></div>
+            </div>
+
+            <div class="pad-box__column">
+                <div class="pad-box__btn-al__func">
+                    <i class="fas fa-arrow-up fa-lg"></i>
+                </div>
+                <div class="pad-box__btn-al"><span>z</span></div>
+                <div class="pad-box__btn-al"><span>x</span></div>
+                <div class="pad-box__btn-al"><span>c</span></div>
+                <div class="pad-box__btn-al"><span>v</span></div>
+                <div class="pad-box__btn-al"><span>b</span></div>
+                <div class="pad-box__btn-al"><span>n</span></div>
+                <div class="pad-box__btn-al"><span>m</span></div>
+                <div class="pad-box__btn-al__func">
+                    <i class="fas fa-backspace fa-lg"></i>
+                </div>
+            </div>
+
+            <div class="pad-box__last-column">
+                <div class="pad-box__btn-al__func">
+                    123
+                </div>
+                <div class="pad-box__btn-al__func">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="pad-box__btn-al">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <div class="pad-box__btn-space">
+                    <span>space</span>
+                </div>
+                <div class="pad-box__btn-return">
+                    <span>return</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script
+    src="https://kit.fontawesome.com/6478f529f2.js"
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>

@@ -78,22 +78,64 @@ body {
     animation: fade-inY 0.7s linear;
 }
 
-.main-chat__column-receive {
+.main-chat__column-receive1 {
     margin-top: 20px;
     display: flex; 
     align-items: center;
     width: 100%;
     opacity: 0;
-    animation: fade-inX linear 1s 1s forwards;
+    animation: fade-inX linear 1s 0s forwards;
 }
 
-.main-chat__column-send {
+.main-chat__column-receive2 {
     margin-top: 20px;
+    display: flex; 
+    align-items: center;
+    width: 100%;
+    opacity: 0;
+    animation: fade-inX linear 1s 4s forwards;
+}
+
+.main-chat__column-receive3 {
+    margin-top: 20px;
+    display: flex; 
+    align-items: center;
+    width: 100%;
+    opacity: 0;
+    animation: fade-inX linear 1s 6.5s forwards;
+}
+
+
+
+
+.main-chat__column-send1 {
+    margin-top: 20px;
+    width: 100%;
     display: flex; 
     align-items: center;
     justify-content: flex-end;
     opacity: 0;
-    animation: fade-in-X linear 1s 3.5s forwards;
+    animation: fade-in-X linear 1s 2.5s forwards;
+}
+
+.main-chat__column-send2 {
+    margin-top: 20px;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: flex-end;
+    opacity: 0;
+    animation: fade-in-X linear 1s 5.5s forwards;
+}
+
+.main-chat__column-send3 {
+    margin-top: 20px;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: flex-end;
+    opacity: 0;
+    animation: fade-in-X linear 1s 8s forwards;
 }
 
 @keyframes fade-inX {
@@ -256,6 +298,11 @@ body {
 }
 
 
+.mint {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
 
 
 
@@ -276,6 +323,10 @@ body {
 }
 
 .fixed-box:focus-within {
+    bottom: 0px;
+}
+
+.fixed-box:hover {
     bottom: 0px;
 }
 

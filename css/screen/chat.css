@@ -1,6 +1,6 @@
 #chat-screen {
     background-color: #abc1d1;
-    height: 200vh;
+    height: 300vh;
     position:relative;
 }
 
@@ -74,6 +74,84 @@ body {
     align-items: center;
 }
 
+.chat-time-box {
+    animation: fade-inY 0.7s linear;
+}
+
+.main-chat__column-receive {
+    margin-top: 20px;
+    display: flex; 
+    align-items: center;
+    width: 100%;
+    opacity: 0;
+    animation: fade-inX linear 1s 1s forwards;
+}
+
+.main-chat__column-send {
+    margin-top: 20px;
+    display: flex; 
+    align-items: center;
+    justify-content: flex-end;
+    opacity: 0;
+    animation: fade-in-X linear 1s 3.5s forwards;
+}
+
+@keyframes fade-inX {
+    from {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-X {
+    from {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+
+@keyframes fade-inY {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+
+@keyframes fade-inZ {
+    0% {
+        opacity: 0;
+        bottom: 0;
+    }
+
+    50% {
+        opacity: 0;
+        bottom: 0;
+    }
+    90% {
+        bottom: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 
 /* receive */
@@ -191,10 +269,31 @@ body {
 
 .fixed-box {
     position: fixed;
-    bottom: 0;
+    bottom: -265px;
     width:100%;
+    transition: all ease-in-out 0.3s;
+    animation: fade-inZ linear 4s;
 }
 
+.fixed-box:focus-within {
+    bottom: 0px;
+}
+
+.input-box-border:focus-within {
+    width:100%;
+    transform: translateX(-30px) scale(1.1, 1);
+}
+
+.fixed-box:focus-within .input-box .input-box-plus:first-child,
+.fixed-box:focus-within .input-box .input-box-border-i:last-child
+ {
+    opacity: 0;
+}
+
+.fixed-box .input-box .input-box-plus:first-child,
+.fixed-box .input-box .input-box-border-i:last-child {
+    transition: opacity 0.2s ease-in-out;
+}
 
 /* input-box */
 .input-box {
@@ -223,6 +322,7 @@ body {
     margin-left: 20px;
     border: 1px solid rgba(80,80,80,0.2);
     border-radius: 20px;
+    transition: all ease-in-out 0.2s;
 }
 
 
@@ -271,6 +371,7 @@ body {
     background-color: #d2d6dc;
     padding-top: 8px;
 }
+
 
 .pad-box__column {
     margin: 5px 15px;
